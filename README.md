@@ -1,24 +1,62 @@
 # Python Data Integration System
 
-Sistema robusto de integração de vendas desenvolvido em Python e MySQL, utilizando padrões de **Repository Pattern**, **Soft Delete** e **Auditoria de Dados**.
+Robust sales data integration system built with **Python** and
+**MySQL**, designed using clean architecture principles such as
+Repository Pattern, Soft Delete, and Data Auditing.
 
-## 🛠️ Estrutura do Projeto
+## Project Overview
 
-- **config/**: Configurações de ambiente e variáveis globais.
-- **database/**: Gerenciamento da conexão com o MySQL.
-- **models/**: Classes que representam as entidades (Customer, Product, Order).
-- **repositories/**: Camada de persistência (Queries SQL isoladas).
-- **services/**: Lógica de negócio e orquestração de dados.
-- **data/**: Armazenamento de arquivos para importação/exportação.
-- **logs/**: Registros de execução e erros do sistema.
+The system simulates a real-world sales integration pipeline,
+supporting:
 
-## 🚀 Como Configurar
+-   MySQL persistence
+-   Repository pattern
+-   Service layer
+-   Audit logging
+-   Soft delete
+-   File import/export
+-   Logging
 
-### 1. Pré-requisitos
-- Python 3.8+
-- MySQL Server 8.0+
+## Technologies
 
-### 2. Instalação de Dependências
-No terminal, instale os pacotes necessários:
-```bash
+-   Python 3.8+
+-   MySQL 8+
+-   SQL
+-   Git
+-   OOP
+
+## Project Structure
+
+project_root/
+
+config/ database/ models/ repositories/ services/ data/ logs/
+
+main.py
+
+## Features
+
+-   Repository Pattern
+-   Soft delete
+-   Audit fields
+-   Logging
+-   Clean architecture
+
+## Setup
+
 pip install -r requirements.txt
+
+CREATE DATABASE sales_db;
+
+Update config/config.py
+
+## Running
+
+python main.py
+
+## Purpose
+
+Portfolio project for freelance backend / data jobs.
+
+## Author
+
+Henrique Oliveira
